@@ -1,0 +1,16 @@
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            File temp = File.createTempFile("tempFile", ".txt");
+            System.out.println("Temp file created: " + temp.getAbsolutePath());
+
+            FileWriter writer = new FileWriter(temp);
+            writer.write("This is temporary data.");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
