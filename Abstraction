@@ -1,0 +1,20 @@
+abstract class Animal {
+    Animal() {
+        System.out.println("Animal created");
+    }
+
+    abstract void makeSound();
+}
+
+class Cow extends Animal {
+    void makeSound() {
+        System.out.println("Moo");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Cow();
+        a.makeSound();
+    }
+}
