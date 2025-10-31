@@ -1,0 +1,9 @@
+import java.util.*; public class Main (
+
+public static final int max=4; public static int[] arr=new int[max]; public static int R=-1; public static int F=-1; // Insertion public void enqueue(int data)[ if(R=-max-1)[ System.out.println(" "); System.out.println("OVERFLOW QUEUE "); return; Jelse{ R++; arr[R]=data; System.out.println("Added To QUEUE :" + data); ]} public void dequeue()[ if (R-1 && F==-1 || F<=R)[ System.out.println(" "); 1 System.out.println("UNDERFLOW QUEUE "); return; } else{ F++; System.out.println("REMOVED FROM QUEUE:* + arr[F]); 11 public static void main(String[] args) [ Main q = new Main(); q.enqueue(10); q.enqueue(20); q.enqueue(33); q.enqueue(44);
+
+for (int i=0;i<max;i++){ System.out.print(arr[i]); } q.enqueue(55); q.enqueue(76);) q.dequeue();
+
+q.dequeue();
+
+q.dequeue(); q.dequeue();]]
